@@ -1,0 +1,21 @@
+table.reporte {
+	border-style: none;
+	width: 100%;
+	float: left;
+}
+
+table.reporte tr th{
+	background: #bbb;
+	font-size: 8pt;
+	text-align: center;
+}
+
+table.reporte tr.impar{
+	background: #ddd;
+} 
+table.reporte tr.par{
+	background: #efefef;
+}
+table.reporte td{
+	font-size: 8pt;
+}

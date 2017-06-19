@@ -1,0 +1,101 @@
+/* Cabecera template */
+#area_cabecera_pagina {
+    position: relative;
+    color: #fff; 
+    background-color: #85b2cb;
+    height: 70px;
+    width: 100%;
+    color: white;
+    margin: 0px 0px 1px 0px;
+}
+
+#area_cabecera_pagina #logo_cabecera_pagina{
+    float: left;
+    background-image: url('#{facesContext.externalContext.requestContextPath}/resources/img/logo.gif');
+    background-repeat: no-repeat;
+    background-position: left top;
+    width: 109px;
+    height: 65px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#area_cabecera_pagina #cabecera_nombre_sistema{
+    margin-top: 5px;
+    margin-left: 120px;
+    font-size: 18pt;
+    font-weight: bold;
+}
+
+#area_cabecera_pagina #cabecera_nombre_ambiente{
+    margin-top: 5px;
+    margin-left: 220px;
+    font-size: 10pt;
+    font-weight: bold;
+}
+
+#area_cabecera_pagina #fin_cabecera_pagina{
+    float: right;
+    margin-top: 5px;
+    margin-right: 10px;
+    text-align: right;
+    font-size: 8pt;
+    font-weight: bold;
+}
+
+#area_pie_pagina {
+    clear:both;
+    /* ancho de la linea y color del pie de página */
+    border-top: 6px solid #85b2cb;
+    margin-top: 5px;
+    width: 100%;
+}
+
+#area_menu {
+    float: left;
+    background-color: #fff;
+    width: 12%;
+    font-family: Verdana, "Verdana CE";
+    border-bottom: 1px solid #AFAFAF; 
+    font-size:  10px;
+    margin: 0px;
+    padding: 0px;
+    color: #D20005;
+}
+
+.area_trabajo {
+    background-color: #fff;
+    padding: 0px;
+    margin-left: 170px;
+    margin-top: 0px;
+    width: 87%;
+    height: 480px;
+}
+
+#copyright_pie_pagina {
+    float: left;
+    color: #036;
+    padding-top: 5px;
+}
+
+table.reporte {
+	border-style: none;
+	width: 100%;
+	float: left;
+}
+
+table.reporte tr th{
+	background: #bbb;
+	font-size: 8pt;
+	text-align: center;
+}
+
+table.reporte tr.impar{
+	background: #ddd;
+} 
+table.reporte tr.par{
+	background: #efefef;
+}
+table.reporte td{
+	font-size: 8pt;
+}

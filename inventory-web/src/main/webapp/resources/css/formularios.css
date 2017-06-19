@@ -1,0 +1,14 @@
+.formulario th {
+	color: black; 
+	background-color: #ddd;
+	text-align: right;
+	/*width: 12em;*/
+	width: 20%;
+	vertical-align: top;
+	font-size: 8pt;
+}
+
+.formulario td {
+	vertical-align: top;
+	font-size: 8pt; 
+}

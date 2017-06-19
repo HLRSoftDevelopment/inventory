@@ -1,0 +1,7 @@
+com\inventory\service\MenuService.class
+com\inventory\entity\Empresaria.class
+com\inventory\service\impl\MenuServiceImpl.class
+com\inventory\service\impl\EmpresariaServiceImpl.class
+com\inventory\entity\Menu.class
+com\inventory\service\impl\ServiceBase.class
+com\inventory\service\EmpresariaService.class

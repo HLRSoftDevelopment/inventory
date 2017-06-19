@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <h:outputStylesheet id="inventoryStyle" library="css"  name="inventory.css"></h:outputStylesheet>
+        <title>Inicio</title>
+    </h:head>
+    <h:body>
+        <div id="top">
+            <ui:insert name="top">
+                <h:panelGroup id="area_cabecera_pagina" layout="block">
+                    <h:panelGroup id="logo_cabecera_pagina" layout="block" />
+                    <h:panelGroup id="fin_cabecera_pagina" layout="block">
+                        <h:outputText id="usuarioOutputText" value="Usuario: #{menuController.username} | Servidor: #{menuController.hostname}" style="display:block" />
+                        <h:form>
+                            <h:commandLink styleClass="filter" action="#{menuController.cerrarSesion()}" value="Salir" />
+                        </h:form>
+                    </h:panelGroup>
+                    <h:panelGroup id="cabecera_nombre_sistema" layout="block">
+                            <h:outputText value="Inventory" />
+                    </h:panelGroup>
+                    <h:panelGroup id="cabecera_nombre_ambiente" layout="block">
+                            <h:outputText value="Desarrollo___"  />
+                    </h:panelGroup>
+                </h:panelGroup>
+            </ui:insert>
+        </div>
+        <div>
+            <div id="area_menu">
+                <ui:insert name="left">
+                    <h:form>
+                        <p:menu  model="#{menuController.model}" />
+                    </h:form>
+                </ui:insert>
+            </div>
+            <div id="content" class="area_trabajo">
+                <ui:insert name="content">Content</ui:insert>
+            </div>
+        </div>
+        <div id="area_pie_pagina">
+            <ui:insert name="bottom">
+                <h:panelGroup layout="block">
+                    <h:panelGroup id="copyright_pie_pagina">
+                            <h:outputText id="txtCopyright" value="&#160;&#174; Copyright HLRSoft Development" />
+                    </h:panelGroup>
+                </h:panelGroup> 
+                <h:panelGroup id="logoInferior" />
+            </ui:insert>
+        </div>
+    </h:body>
+</html>
