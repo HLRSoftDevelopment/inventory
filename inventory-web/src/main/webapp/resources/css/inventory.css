@@ -2,7 +2,7 @@
 #area_cabecera_pagina {
     position: relative;
     color: #fff; 
-    background-color: #85b2cb;
+    background-color: #00BCD4;
     height: 70px;
     width: 100%;
     color: white;
@@ -11,7 +11,7 @@
 
 #area_cabecera_pagina #logo_cabecera_pagina{
     float: left;
-    background-image: url('#{facesContext.externalContext.requestContextPath}/resources/img/logo.gif');
+    background-image: url('#{facesContext.externalContext.requestContextPath}/resources/imagen/logo.png');
     background-repeat: no-repeat;
     background-position: left top;
     width: 109px;
@@ -22,15 +22,16 @@
 
 #area_cabecera_pagina #cabecera_nombre_sistema{
     margin-top: 5px;
-    margin-left: 120px;
+    margin-left: 130px;
     font-size: 18pt;
     font-weight: bold;
+    padding-top: 10px;
 }
 
 #area_cabecera_pagina #cabecera_nombre_ambiente{
     margin-top: 5px;
-    margin-left: 220px;
-    font-size: 10pt;
+    margin-left: 130px;
+    font-size: 12pt;
     font-weight: bold;
 }
 
@@ -45,8 +46,8 @@
 
 #area_pie_pagina {
     clear:both;
-    /* ancho de la linea y color del pie de p√°gina */
-    border-top: 6px solid #85b2cb;
+    /* ancho de la linea y color del pie de p·gina */
+    border-top: 6px solid #00BCD4;
     margin-top: 5px;
     width: 100%;
 }
@@ -56,10 +57,7 @@
     background-color: #fff;
     width: 12%;
     font-family: Verdana, "Verdana CE";
-    border-bottom: 1px solid #AFAFAF; 
     font-size:  10px;
-    margin: 0px;
-    padding: 0px;
     color: #D20005;
 }
 
@@ -68,7 +66,7 @@
     padding: 0px;
     margin-left: 170px;
     margin-top: 0px;
-    width: 87%;
+    width: 87,5%;
     height: 480px;
 }
 
@@ -79,23 +77,45 @@
 }
 
 table.reporte {
-	border-style: none;
-	width: 100%;
-	float: left;
+    border-style: none;
+    width: 100%;
+    float: left;
 }
 
+/* Cabecera tabla */
 table.reporte tr th{
-	background: #bbb;
-	font-size: 8pt;
-	text-align: center;
+    background: #00BCD4;
+    font-size: 10pt;
+    font-weight: bold;
+    text-align: center;
 }
 
 table.reporte tr.impar{
-	background: #ddd;
+    background: #036;
 } 
 table.reporte tr.par{
-	background: #efefef;
+    background: #007d72;
 }
 table.reporte td{
-	font-size: 8pt;
+    font-size: 9pt;
+}   
+
+/* ALINEACION */
+.alinCent{
+    text-align: center !important;
+}
+.alinIzq{
+    text-align: left !important;
+}
+.alinDer{
+    text-align: right !important;
+}
+.alinVertCent{
+    vertical-align: middle !important;
+}
+.alinVertSup{
+    vertical-align: top !important;
+}
+.alinVertInf{
+    vertical-align: bottom !important;
 }

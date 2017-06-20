@@ -7,24 +7,40 @@
     <body>
         <ui:composition template="./../templates/template.xhtml">
             <ui:define name="content" >
-                Usuario en sesion:
-                <p:dataTable value="#{controller.empresarias}" tableStyleClass="reporte" var="item">
-					<p:column styleClass="alinCent" headerText="Codigo___">
-						<h:outputText value="#{item.codigo}" />
-					</p:column>
-					<p:column headerText="Identificacion">
-						<h:outputText value="#{item.identificacion}" />
-					</p:column>
-					<p:column headerText="Nombre">
-						<h:outputText value="#{item.nombre}" />
-					</p:column>
-					<p:column headerText="Ubicacion">
-						<h:outputText value="#{item.ubicacion}" />
-					</p:column>
-					<p:column headerText="Estado">
-						<h:outputText value="#{item.estado}" />
-					</p:column>
-				</p:dataTable>
+                <p:dataTable value="#{menuController.menus}" tableStyleClass="reporte" var="item" style="width:100%;" >
+                    <p:columnGroup type="header">
+                        <p:row>
+                            <p:column id="columnCodigo"      style="text-align:center; width:6%;" headerText="C&#243;digo" />
+                            <p:column id="columnNombre"      style="text-align:center; width:0%;" headerText="Nombres" />
+                            <p:column id="columnTipo"        style="text-align:center; width:6%;" headerText="Tipo" />
+                            <p:column id="columnTipoUsuario" style="text-align:center; width:6%;" headerText="Tipo Usuario" />    
+                            <p:column id="columnEstado"      style="text-align:center; width:10%;" headerText="Estado" />
+                            <p:column id="columnUrl"         style="text-align:center; width:40%;" headerText="Url" />
+                            <p:column id="columnIcono"       style="text-align:center; width:12%;" headerText="Icono" />
+                        </p:row>
+                    </p:columnGroup>
+                    <p:column styleClass="alinCent" >
+                        <h:outputText value="#{item.codigo}" />
+                    </p:column>
+                    <p:column styleClass="alinIzq" >
+                        <h:outputText value="#{item.nombre}" />
+                    </p:column>
+                    <p:column styleClass="alinCent" >
+                        <h:outputText value="#{item.tipoMenu}" />
+                    </p:column>
+                    <p:column styleClass="alinCent" >
+                        <h:outputText value="#{item.tipoUsuario}" />
+                    </p:column>
+                    <p:column styleClass="alinCent" >
+                            <h:outputText value="#{item.estado}" />
+                    </p:column>
+                    <p:column styleClass="alinIzq" >
+                        <h:outputText value="#{item.url}" />
+                    </p:column>
+                    <p:column styleClass="alinIzq" >
+                        <h:outputText value="#{item.icono}" />
+                    </p:column>
+                </p:dataTable>
             </ui:define>
         </ui:composition>
     </body>
